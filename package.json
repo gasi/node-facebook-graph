@@ -1,0 +1,16 @@
+{
+    "name": "facebook",
+    "description": "Facebook Node.js SDK",
+    "version": "0.0.1",
+    "author": "Daniel Gasienica <daniel@gasienica.ch>",
+    "dependencies": {
+        "hashlib": "1.x"
+    },
+    "main": "./lib/facebook",
+    "keywords": [
+        "facebook"
+    ],
+    "engines": {
+        "node": ">= 0.4.2"
+    }
+}

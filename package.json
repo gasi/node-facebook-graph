@@ -1,7 +1,7 @@
 {
     "name": "facebook-graph",
     "description": "Facebook Node.js SDK",
-    "version": "0.0.1",
+    "version": "0.0.3",
     "author": "Daniel Gasienica <daniel@gasienica.ch>",
     "dependencies": {
         "hashlib": "https://github.com/brainfucker/hashlib/tarball/f83f4477fd654a264518568b0eeae7797fe8526b"

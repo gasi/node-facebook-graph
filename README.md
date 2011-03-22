@@ -11,9 +11,13 @@ This client library is designed to support the
 Facebook authentication. You can read more about the Graph API at
 [http://developers.facebook.com/docs/api][fb-graph-api-docs].
 
-
 Installation
 ------------
+
+    npm install facebook-graph
+
+Development
+-----------
 
     git clone https://github.com/gasi/node-facebook-graph.git facebook-graph
     npm link ./facebook-graph

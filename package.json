@@ -1,5 +1,5 @@
 {
-    "name": "facebook",
+    "name": "facebook-graph",
     "description": "Facebook Node.js SDK",
     "version": "0.0.1",
     "author": "Daniel Gasienica <daniel@gasienica.ch>",

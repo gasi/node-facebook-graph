@@ -25,12 +25,14 @@ Development
 Basic usage
 -----------
 
-    var facebook = require('facebook');
+    var facebook = require('facebook-graph');
     var accessToken = '<Your OAuth Access Token>';
     var graph = new facebook.GraphAPI(accessToken);
-    var print = function (error, data) {
+    
+    function print(error, data) {
         console.log(error ? error : data);
-    };
+    }
+    
     graph.getObject('me', print);
     graph.getConnections('me', 'friends', print);
     graph.putObject('me', 'feed', {message: 'The computerz iz writing on my wallz!1'}, print);

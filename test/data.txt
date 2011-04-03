@@ -1,0 +1,11 @@
+# Name <space> Input <space> Ouput <newline>
+len1 YQ a
+len2 YWE aa
+len3 YWFh aaa
+no_padding YWJj abc
+padding YQ a
+hyphen fn5- ~~~
+underscore Pz8_ ???
+# signature vlXgu64BQGFSQrY0ZcJBZASMvYvTHu9GQ0YM9rjPSso 2042261e5db75da5a55d82f8ba0ef503ef85edd781e29074cbb85919f41ae073
+# this should fail and print out
+# on_purpose_failure YQ b

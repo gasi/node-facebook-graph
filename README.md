@@ -28,11 +28,11 @@ Basic usage
     var facebook = require('facebook-graph');
     var accessToken = '<Your OAuth Access Token>';
     var graph = new facebook.GraphAPI(accessToken);
-    
+
     function print(error, data) {
         console.log(error ? error : data);
     }
-    
+
     graph.getObject('me', print);
     graph.getConnections('me', 'friends', print);
     graph.putObject('me', 'feed', {message: 'The computerz iz writing on my wallz!1'}, print);
@@ -50,13 +50,13 @@ profile of the logged in user with:
     // This snippet assumes that you're using the
     // connect.cookieParser (http://senchalabs.github.com/connect/middleware-cookieParser.html)
     // middleware.
-    var facebook = require('facebook');
+    var facebook = require('facebook-graph');
     var user = facebook.getUserFromCookie(req.cookies, appId, appSecret);
     if (user) {
         var graph = new facebook.GraphAPI(user['access_token']);
-        var print = function (error, data) {
+        function print(error, data) {
             console.log(error ? error : data);
-        };
+        }
         graph.getObject('me', print);
         graph.getConnections('me', 'friends', print);
         graph.putObject('me', 'feed', {message: 'The computerz iz writing on my wallz!1'}, print);

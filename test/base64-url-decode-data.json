@@ -1,0 +1,50 @@
+[
+    {
+        "test": "strictEqual",
+        "name": "length 1",
+        "input": "YQ",
+        "output": "a"
+    },
+    {
+        "test": "strictEqual",
+        "name": "length 2",
+        "input": "YWE",
+        "output": "aa"
+    },
+    {
+        "test": "strictEqual",
+        "name": "length 3",
+        "input": "YWFh",
+        "output": "aaa"
+    },
+    {
+        "test": "strictEqual",
+        "name": "no padding",
+        "input": "YWJj",
+        "output": "abc"
+    },
+    {
+        "test": "strictEqual",
+        "name": "hyphen",
+        "input": "fn5-",
+        "output": "~~~"
+    },
+    {
+        "test": "strictEqual",
+        "name": "underscore",
+        "input": "Pz8_",
+        "output": "???"
+    },
+    {
+        "test": "strictEqual",
+        "name": "facebook",
+        "input": "RmFjZWJvb2sgcm9ja3M",
+        "output": "Facebook rocks"
+    },
+    {
+        "test": "notStrictEqual",
+        "name": "negative 1",
+        "input": "YQ",
+        "output": "b"
+    }
+]

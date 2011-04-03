@@ -1,0 +1,20 @@
+[
+    {
+        "signedRequest": "1sxR88U4SW9m6QnSxwCEw_CObqsllXhnpP5j2pxD97c.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyODEwNTI4MDAsIm9hdXRoX3Rva2VuIjoiMTE3NzQzOTcxNjA4MTIwfDIuVlNUUWpub3hYVVNYd1RzcDB1U2g5d19fLjg2NDAwLjEyODEwNTI4MDAtMTY3Nzg0NjM4NXx4NURORHBtcy1nMUM0dUJHQVYzSVdRX2pYV0kuIiwidXNlcl9pZCI6IjE2Nzc4NDYzODUifQ",
+        "appSecret": "943716006e74d9b9283d4d5d8ab93204",
+        "expected": {
+            "algorithm": "HMAC-SHA256",
+            "expires": 1281052800,
+            "oauth_token": "117743971608120|2.VSTQjnoxXUSXwTsp0uSh9w__.86400.1281052800-1677846385|x5DNDpms-g1C4uBGAV3IWQ_jXWI.",
+            "user_id": "1677846385"
+        }
+    },
+    {
+        "signedRequest": "vlXgu64BQGFSQrY0ZcJBZASMvYvTHu9GQ0YM9rjPSso.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsIjAiOiJwYXlsb2FkIn0",
+        "appSecret": "secret",
+        "expected": {
+            "0": "payload",
+            "algorithm": "HMAC-SHA256"
+        }
+    }
+]

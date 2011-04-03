@@ -22,6 +22,12 @@ Development
     git clone https://github.com/gasi/node-facebook-graph.git facebook-graph
     npm link ./facebook-graph
 
+
+Running Tests
+-------------
+
+    node test
+
 Basic usage
 -----------
 
@@ -35,7 +41,9 @@ Basic usage
 
     graph.getObject('me', print);
     graph.getConnections('me', 'friends', print);
-    graph.putObject('me', 'feed', {message: 'The computerz iz writing on my wallz!1'}, print);
+    graph.putObject('me', 'feed', {
+        message: 'The computerz iz writing on my wallz!1'
+    }, print);
 
 Express JS
 ----------
@@ -67,16 +75,18 @@ Acknowledgements
 ----------------
 
 Implementation and documentation ported from the official
-[Facebook Python SDK][fb-python-sdk].
-Thanks for supporting open source, Facebook.
+[Facebook Python SDK][fb-python-sdk] and [Facebook PHP SDK][fb-php-sdk].
+
+_Thanks for supporting open source, Facebook._
 
 Reporting Issues
 ----------------
 
 Please file bugs or other issues in our [issues tracker][issues].
 
-[fb-js-sdk]: http://github.com/facebook/connect-js
+[fb-js-sdk]: https://github.com/facebook/connect-js
 [fb-graph-api-docs]: http://developers.facebook.com/docs/api
-[fb-python-sdk]: http://github.com/facebook/python-sdk
+[fb-php-sdk]: https://github.com/facebook/php-sdk
+[fb-python-sdk]: https://github.com/facebook/python-sdk
 [express-js]: http://expressjs.com
 [issues]: https://github.com/gasi/node-facebook/issues

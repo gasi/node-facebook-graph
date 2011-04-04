@@ -1,5 +1,10 @@
 # Changelog: Facebook Node.js SDK
 
+## Version 0.0.6 – April 4, 2011
+
+  - Fixed bug in `getUserFromSignedRequest`: Missed `this` qualifier for call
+    to `decodeSignedRequest` and `data` qualifier for `oauth_token`.
+
 ## Version 0.0.5 – April 3, 2011
 
   - Added `getUserFromSignedRequest` function.

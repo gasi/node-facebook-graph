@@ -36,7 +36,7 @@ Basic usage
     var graph = new facebook.GraphAPI(accessToken);
 
     function print(error, data) {
-        console.log(error ? error : data);
+        console.log(error || data);
     }
 
     graph.getObject('me', print);
@@ -63,7 +63,7 @@ profile of the logged in user with:
     if (user) {
         var graph = new facebook.GraphAPI(user['access_token']);
         function print(error, data) {
-            console.log(error ? error : data);
+            console.log(error || data);
         }
         graph.getObject('me', print);
         graph.getConnections('me', 'friends', print);

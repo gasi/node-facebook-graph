@@ -89,4 +89,4 @@ Please file bugs or other issues in our [issues tracker][issues].
 [fb-php-sdk]: https://github.com/facebook/php-sdk
 [fb-python-sdk]: https://github.com/facebook/python-sdk
 [express-js]: http://expressjs.com
-[issues]: https://github.com/gasi/node-facebook/issues
+[issues]: https://github.com/gasi/node-facebook-graph/issues

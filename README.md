@@ -36,7 +36,7 @@ Basic usage
     var graph = new facebook.GraphAPI(accessToken);
 
     function print(error, data) {
-        console.log(error || data);
+        console.log(error ? error : data);
     }
 
     graph.getObject('me', print);
@@ -63,11 +63,19 @@ profile of the logged in user with:
     if (user) {
         var graph = new facebook.GraphAPI(user['access_token']);
         function print(error, data) {
-            console.log(error || data);
+            console.log(error ? error : data);
         }
         graph.getObject('me', print);
         graph.getConnections('me', 'friends', print);
         graph.putObject('me', 'feed', {message: 'The computerz iz writing on my wallz!1'}, print);
+
+	// FQL single query:
+	graph.fqlQuery("SELECT uid2 FROM friend WHERE uid1=me()",print);
+
+	// FQL multiquery:
+	graph.fqlQuery({"query1":"SELECT uid, rsvp_status FROM event_member WHERE eid=12345678",
+	                "query2"::"SELECT name, url, pic FROM profile WHERE id IN (SELECT uid FROM #query1)"},
+			print);
     }
 
 
@@ -89,4 +97,4 @@ Please file bugs or other issues in our [issues tracker][issues].
 [fb-php-sdk]: https://github.com/facebook/php-sdk
 [fb-python-sdk]: https://github.com/facebook/python-sdk
 [express-js]: http://expressjs.com
-[issues]: https://github.com/gasi/node-facebook-graph/issues
+[issues]: https://github.com/gasi/node-facebook/issues

@@ -1,6 +1,6 @@
 # Changelog: Facebook Node.js SDK
 
-## Version 0.0.7 - January 9, 2011 (amallavarapu)
+## Version 0.0.6-1 - January 23, 2011 (amallavarapu)
   - Added FQL query support
 
 ## Version 0.0.6 – April 4, 2011

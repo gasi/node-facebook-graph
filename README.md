@@ -1,6 +1,17 @@
 Facebook Node.js SDK
 ====================
 
+<table bgcolor="#FF0000">
+    <tr>
+        <td>
+            <b>This SDK is deprecated.</b> 
+            <p>This SDK is currently no longer supported since it’s a port of the
+               <a href='https://github.com/facebook/python-sdk'>Facebook Python SDK</a>
+               which has been deprecated. <a href="https://github.com/gasi/node-facebook-graph/issues/3">More…</a></p>
+        </td>
+    </tr>
+</table>
+
 _This is a port of the official Facebook Python SDK to Node.js.
 Why did I choose the Python SDK? Because it's simple, clean and beautiful code.
 Besides, I only needed support for the Graph API._

@@ -1,6 +1,17 @@
 Facebook Node.js SDK
 ====================
 
+<table bgcolor="#FF0000">
+    <tr>
+        <td>
+            <b>This SDK is deprecated.</b> 
+            <p>This SDK is currently no longer supported since it’s a port of the
+               <a href='https://github.com/facebook/python-sdk'>Facebook Python SDK</a>
+               which has been deprecated. <a href="https://github.com/gasi/node-facebook-graph/issues/3">More…</a></p>
+        </td>
+    </tr>
+</table>
+
 _This is a port of the official Facebook Python SDK to Node.js.
 Why did I choose the Python SDK? Because it's simple, clean and beautiful code.
 Besides, I only needed support for the Graph API._
@@ -36,7 +47,7 @@ Basic usage
     var graph = new facebook.GraphAPI(accessToken);
 
     function print(error, data) {
-        console.log(error ? error : data);
+        console.log(error || data);
     }
 
     graph.getObject('me', print);
@@ -63,7 +74,7 @@ profile of the logged in user with:
     if (user) {
         var graph = new facebook.GraphAPI(user['access_token']);
         function print(error, data) {
-            console.log(error ? error : data);
+            console.log(error || data);
         }
         graph.getObject('me', print);
         graph.getConnections('me', 'friends', print);
@@ -89,4 +100,4 @@ Please file bugs or other issues in our [issues tracker][issues].
 [fb-php-sdk]: https://github.com/facebook/php-sdk
 [fb-python-sdk]: https://github.com/facebook/python-sdk
 [express-js]: http://expressjs.com
-[issues]: https://github.com/gasi/node-facebook/issues
+[issues]: https://github.com/gasi/node-facebook-graph/issues

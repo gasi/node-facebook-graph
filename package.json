@@ -10,7 +10,7 @@
         }
     ],
     "dependencies": {
-        "node-oauth"    : "*",
+        "node-oauth"    : "*"
     },
     "main": "./lib/facebook",
     "keywords": [

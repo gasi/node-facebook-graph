@@ -1,0 +1,22 @@
+{
+    "name": "facebook-graph",
+    "description": "Facebook Node.js SDK",
+    "version": "0.1.0",
+    "author": "Daniel Gasienica <daniel@gasienica.ch>",
+    "contributors": [
+        {
+            "name": "Trey Griffith",
+            "email": "trey.griffith@gmail.com",
+        }
+    ],
+    "dependencies": {
+        "node-oauth"    : "*",
+    }
+    "main": "./lib/facebook",
+    "keywords": [
+        "facebook"
+    ],
+    "engines": {
+        "node": ">= 0.4.2"
+    }
+}

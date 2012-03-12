@@ -1,8 +1,18 @@
 {
     "name": "facebook-graph",
     "description": "Facebook Node.js SDK",
-    "version": "0.0.6-3",
+    "version": "0.0.6-1",
     "author": "Daniel Gasienica <daniel@gasienica.ch>",
+    "contributors": [
+        {
+            "name": "Aneil Mallavarapu",
+            "email": "aneil@blipboard.com"
+        },
+        {
+            "name": "Jason Fischl",
+            "email": "jason@blipboard.com"
+        }
+    ],
     "main": "./lib/facebook",
     "keywords": [
         "facebook"
